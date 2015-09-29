@@ -24,7 +24,7 @@
       canvasEl.height = window.innerHeight;
       var ctx = canvasEl.getContext("2d");
 
-      var gv = new Asteroids.gameView(game, ctx);
+      var gv = new window.Asteroids.gameView(game, ctx);
 
       gv.start();
 
