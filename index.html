@@ -22,7 +22,7 @@
 
     <script type="text/javascript">
 
-      var game = new Asteroids.Game(15);
+      var game = new Asteroids.Game(3, 4);
 
       var canvasEl = document.getElementsByTagName("canvas")[0];
       canvasEl.width = window.innerWidth;
@@ -30,7 +30,7 @@
       var ctx = canvasEl.getContext("2d");
 
       var gv = new window.Asteroids.gameView(game, ctx);
-
+      var scoreboard = document.getElementById("scoreboard");
       gv.start();
 
     </script>
