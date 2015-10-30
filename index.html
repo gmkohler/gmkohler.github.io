@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <head>
+<<<<<<< HEAD
     <link href="./css/asteroids.scss" rel="stylesheet" type="text/css">
+=======
+    <link href="./css/asteroids.css" rel="stylesheet" type="text/css">
+>>>>>>> 2b363fa07aee22963563a423006ba06defca595b
 </head>
 
 <html>
   <body>
 
+<<<<<<< HEAD
 
     <div class="game-info">
       <div id="lives"></div>
@@ -15,6 +20,13 @@
             src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.js">
     </script>
     <canvas id="game-canvas"></canvas>
+=======
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.js">
+    </script>
+
+    <canvas id="game-canvas"></canvas>
+
+>>>>>>> 2b363fa07aee22963563a423006ba06defca595b
     <script src="./keymaster/keymaster.js"></script>
     <script src="./lib/gameView.js"></script>
     <script src="./lib/game.js"></script>
@@ -26,8 +38,12 @@
 
     <script type="text/javascript">
 
+<<<<<<< HEAD
 
       var game = new Asteroids.Game(3, 3);
+=======
+      var game = new Asteroids.Game(15);
+>>>>>>> 2b363fa07aee22963563a423006ba06defca595b
 
       var canvasEl = document.getElementsByTagName("canvas")[0];
       canvasEl.width = window.innerWidth;
@@ -35,6 +51,7 @@
       var ctx = canvasEl.getContext("2d");
 
       var gv = new window.Asteroids.gameView(game, ctx);
+<<<<<<< HEAD
       var scoreboard = document.getElementById("scoreboard");
 
       document.addEventListener('keyup', function (e) {
@@ -54,6 +71,9 @@
             break;
         }
       })
+=======
+
+>>>>>>> 2b363fa07aee22963563a423006ba06defca595b
       gv.start();
 
     </script>
