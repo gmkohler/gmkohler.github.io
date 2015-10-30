@@ -1,0 +1,26 @@
+body {
+  position:relative;
+  background-image: url("../assets/asteroids-background.jpg");
+  background-size: cover;
+}
+
+.game-info {
+  position:absolute;
+  display:block;
+  left:0;
+  bottom:5%;
+  width:20%;
+  color: #FFFFFF;
+
+  div{
+    display:inline-block;
+    float:left;
+  }
+}
+
+.clearfix {
+  clear:both;
+  :after{
+    content:""
+  }
+}

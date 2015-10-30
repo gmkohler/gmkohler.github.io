@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <head>
-    <link href="./css/asteroids.css" rel="stylesheet" type="text/css">
+    <link href="./css/asteroids.scss" rel="stylesheet" type="text/css">
 </head>
 
 <html>
   <body>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.js">
+
+    <div class="game-info">
+      <div id="lives"></div>
+      <div id="level"></div>
+    </div>
+    <script type="text/javascript"
+            src="http://ajax.googleapis.com/ajax/libs/jquery/1.2.3/jquery.js">
     </script>
-
     <canvas id="game-canvas"></canvas>
-
     <script src="./keymaster/keymaster.js"></script>
     <script src="./lib/gameView.js"></script>
     <script src="./lib/game.js"></script>
@@ -22,7 +26,8 @@
 
     <script type="text/javascript">
 
-      var game = new Asteroids.Game(3, 4);
+
+      var game = new Asteroids.Game(3, 3);
 
       var canvasEl = document.getElementsByTagName("canvas")[0];
       canvasEl.width = window.innerWidth;
@@ -31,6 +36,24 @@
 
       var gv = new window.Asteroids.gameView(game, ctx);
       var scoreboard = document.getElementById("scoreboard");
+
+      document.addEventListener('keyup', function (e) {
+
+        switch (e.keyCode) {
+          case 37:
+            gv.game.ship.stopRotate();
+            break;
+          case 39:
+            gv.game.ship.stopRotate();
+            break;
+          case 38:
+            gv.game.ship.stopPower();
+            break;
+          case 40:
+            gv.game.ship.stopPower();
+            break;
+        }
+      })
       gv.start();
 
     </script>
