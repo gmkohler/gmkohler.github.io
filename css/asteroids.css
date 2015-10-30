@@ -1,6 +1,6 @@
 body {
-  position:relative;
-  background-image: url("../assets/asteroids-background.jpg");
+  position: relative;
+  background-image: url('../assets/asteroids-background.jpg');
   background-size: cover;
 }
 
