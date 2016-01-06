@@ -2590,7 +2590,7 @@
 
 /* One */
 
-	#one:before {
+	#about:before {
 		background-image: url("../../images/banner.jpg");
 		background-position: 50% 97%;
 		background-repeat: no-repeat;
@@ -2775,7 +2775,7 @@
 
 		/* One */
 
-			#one:before {
+			#about:before {
 				height: 10em;
 			}
 
